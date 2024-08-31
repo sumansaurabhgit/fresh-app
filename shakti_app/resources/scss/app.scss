@@ -1,0 +1,81 @@
+@import './variables';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
+
+
+body{
+    font-family: 'Lato', sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    color: $dark;  
+    background-color:  $bg;
+}
+
+nav li:last-child a{
+    background: $primary;
+    &:hover{
+        color: $primary-hover; 
+    }
+}
+
+nav li a{
+    transition: $smooth;
+    &:hover{
+        color: $primary; 
+    }
+}
+
+section.main{
+    background: $bg;
+    //min-height: calc(100vh - 86px);
+}
+
+.size{
+    background: $secondary;
+}
+.add-to-cart{
+    border: 2px solid $primary;
+    color:$primary; 
+    transition: $smooth;
+    &:hover{
+        background: $primary;
+        border-color:$pure;
+        color:$pure;
+    }
+    
+
+}
+
+.btn-main {
+    background: $primary;
+    transition: $smooth;
+    &:hover {
+        background: $primary-hover;
+    }
+}
+
+section.cart{
+    .amount{ 
+        color: $primary; 
+    }
+}
+
+section.login{
+    min-height: calc(100vh - 86px);
+    a{
+        color: $primary;
+        &:hover{
+            color: $primary-hover; 
+        }
+    }
+}
+
+.noty_theme__mint{
+    border-radius: 50px!important;
+    padding-left: 8px!important;
+}
+
+@media(max-width:1060px){
+    .container{
+        max-width: 90%;
+    }
+}
